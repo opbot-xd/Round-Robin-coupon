@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = "https://round-robin-coupon.onrender.com";
+const API_URL = "https://round-robin-coupon.onrender.com/api";
 
 export const login = async (username, password) => {
   try {
