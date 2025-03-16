@@ -199,6 +199,11 @@ app.get('/api/admin/claims', authenticateAdmin, async (req, res) => {
   }
 });
 
+//test hello world
+app.get('/api/test', (req, res) => {
+  res.status(200).json({ message: 'Hello World' });
+});
+
 // User: Claim a coupon
 app.post('/api/coupons/claim', async (req, res) => {
   try {

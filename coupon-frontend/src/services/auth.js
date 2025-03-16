@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = import.meta.env.REACT_APP_API_URL;
+const API_URL = "https://round-robin-coupon.onrender.com";
 
 export const login = async (username, password) => {
   try {
