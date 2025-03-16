@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = "https://round-robin-coupon.onrender.com";
+const API_URL = "https://round-robin-coupon.onrender.com/api";
 
 // Create axios instance with credentials
 const api = axios.create({
