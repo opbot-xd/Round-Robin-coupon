@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-  origin: "http://localhost:5173",  // Reflects the request origin
+  origin: "https://round-robin-coupon-bice.vercel.app",  // Reflects the request origin
   credentials: true
 }));
 
