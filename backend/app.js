@@ -113,7 +113,6 @@ app.post('/api/admin/login', async (req, res) => {
 
     res.cookie('token', token, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
       sameSite: 'strict',
       maxAge: 3600000 // 1 hour
     });
@@ -215,7 +214,6 @@ app.post('/api/coupons/claim', async (req, res) => {
       sessionId = uuidv4();
       res.cookie('sessionId', sessionId, {
         httpOnly: true,
-        secure: process.env.NODE_ENV === 'production',
         sameSite: 'strict',
         maxAge: 30 * 24 * 60 * 60 * 1000 // 30 days
       });
